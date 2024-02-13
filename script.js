@@ -1,5 +1,8 @@
-'use strict';
+"use strict";
 
-document.querySelector(".show-modal").addEventListener("click" , function(){
-    document.querySelector(".hidden").style.display='none';
-});
+var modal = document.querySelectorAll(".show-modal");
+for (let i = 0; i < modal.length; i++) {
+  modal[i].addEventListener("click", function () {
+    document.querySelector(".hidden").style.display = "block";
+  });
+}
